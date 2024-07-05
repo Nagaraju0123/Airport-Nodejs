@@ -1,0 +1,17 @@
+// ormconfig.json
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "your_username",
+  "password": "your_password",
+  "database": "airport_db",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/entities/**/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entities"
+  }
+}
